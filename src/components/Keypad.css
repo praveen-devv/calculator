@@ -1,0 +1,17 @@
+
+.keypad > button{
+    width: 25%;
+    height: 16.4vh;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 60px;
+    box-sizing: border-box;
+    /* border: none; */
+}
+
+.result{
+    background-color: #B61919;
+}
+
+.opp{
+    background-color: #FFB830;
+}
