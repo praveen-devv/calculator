@@ -24,7 +24,7 @@ const Keypad = () => {
     })
 
     const setValue = (value) =>{
-        // console.log(value);
+        console.log(value);
         if(value === '='){
             calculate();
         }
@@ -78,7 +78,7 @@ const Keypad = () => {
             <Display result={result}/>
             <button value="ac" onClick={e => setValue(e.target.value)} className="opp">AC</button>
             <button value="pm" onClick={e => setValue(e.target.value)} className="opp">+/-</button>
-            <button value="bs" onClick={e => setValue(e.target.value)} className="opp"><i onClick={() => console.log('bs')} className="fas fa-backspace"></i></button>
+            <button value="bs"  className="opp"><i onClick={e => setValue('bs')} className="fas fa-backspace"></i></button>
             <button value="/" onClick={e => setValue(e.target.value)} className="opp">÷</button>
             <button value="7" onClick={e => setValue(e.target.value)}>7</button>
             <button value="8" onClick={e => setValue(e.target.value)}>8</button>
